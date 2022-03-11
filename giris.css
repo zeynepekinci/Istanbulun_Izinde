@@ -1,0 +1,136 @@
+/* Giriş Formu */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Swash:wght@400;700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Swash:wght@400;700&family=Herr+Von+Muellerhoff&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,600&display=swap');
+
+* {
+    box-sizing: border-box;
+
+}
+
+:root {
+    --focus-head-color: hsl(218deg 92% 57%);
+    --focus-tail-color: hsl(218deg 92% 50%);
+}
+
+.form-wrapper{
+    background-color: rgb(81, 223, 241);
+
+}
+
+.giris h2{
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    color: brown;
+    font-size: 70px;
+    font-weight: 600;
+    font-family:"Edwardian Script ITC", cursive ;
+}
+
+.giris::after{
+    content: "";
+    width: 70px;
+    height: 3px;
+    background-color: brown;
+    margin: 0 auto;
+    display: block;
+    margin-top: 10px;
+}
+
+.body {
+    font-size: 20px;
+    height: 100%;
+    margin: 0;
+    font-family:"monospace";
+}
+
+.form {
+    position: relative;
+    display: grid;
+    height: 100%;
+    margin: 0;
+    place-items: center;
+    max-width: 100%;
+    padding: 2.5rem;
+}
+
+form {
+    margin: auto;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Font yazı tipleri*/ 
+
+h1 {
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 0 0 0.5rem 0;
+}
+
+h3 {
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0 0 2rem 0;
+}
+
+a {
+    color: var(--focus-head-color);
+    text-decoration: none;
+}
+
+label {
+    color: bro;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    display: block;
+    width: 100%;
+    margin: 0.5rem 0 1rem 0;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 0;
+    border-radius: 0.125rem 0.25rem;
+    background-color: hsl(222, 20%, 95%);
+}
+
+.checkbox {
+    margin: 0.5rem 0;
+}
+
+input[type="checkbox"] {
+    margin-right: 0.5rem;
+}
+
+button {
+    display: block;
+    padding: 0.5rem 1rem;
+    border: 0;
+    border-radius: 0.125rem 0.25rem;
+    background-color: var(--focus-head-color);
+    color: rgb(255, 255, 255);
+    margin: 2rem 0 0 auto;
+}
+button:hover{
+    color: black;
+    opacity: 80%;
+}
+
+input:focus,
+button:focus {
+    outline: 0;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none;
+}
